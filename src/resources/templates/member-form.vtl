@@ -1,6 +1,8 @@
-<!--index.vtl-->
-<h1>Welcome to Annually our Fun HACK-A-THON</h1>
+<h2>Add a new task:</h2>
 
-<a href="/members/new">Please register your name</a>
-<a href="/members">List of names of members</a>
-<!--index.vtl-->
+<form action="/members" method="post">
+  <label for="memberName">Name of </label>
+  <input id="memberName" name="memberName" type="text">
+
+  <button type="submit" class="btn btn-danger">Add new name</button>
+</form>
