@@ -16,9 +16,9 @@ public class TeamTest {
   }
 
   @Test
-public void getTeamName_teamInstantiatesWithName_ITCrowd() {
+public void getTeamName_teamInstantiatesWithName_DREAM_TEAM() {
   Team testTeam = new Team("DREAM TEAM");
-  assertEquals("DREAM TEAMd", testTeam.getTeamName());
+  assertEquals("DREAM TEAM", testTeam.getTeamName());
 }
 
 @Test
@@ -27,4 +27,5 @@ public void all_returnsAllInstancesOfTeam_true() {
   Team secondTeam = new Team("Wanna BE TEAM");
   assertEquals(true, Team.all().contains(firstTeam));
   assertEquals(true, Team.all().contains(secondTeam));
+}
 }
